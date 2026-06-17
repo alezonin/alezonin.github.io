@@ -1,14 +1,147 @@
-<div class="container" style="max-width: 800px; margin: 4rem auto; padding: 0 1rem;">
-    <a href="index.html" style="text-decoration: none; color: #71717a; font-size: 0.9rem;">← Back to Home</a>
-    <h1 style="margin-top: 1.5rem; margin-bottom: 2.5rem;">Events & Speaking</h1>
+<!-- ALESSANDRO nuova pagina landing - EVENTS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="static/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="event-item" style="display: flex; gap: 2rem; margin-bottom: 2.5rem;">
-        <div class="event-date" style="font-weight: 600; color: #a1a1aa; min-width: 80px;">2025</div>
-        <div class="event-details">
-            <h3 style="margin: 0 0 0.4rem 0;">TEDx Talk: Titolo dello Speech</h3>
-            <p style="color: #666; font-size: 0.95rem; margin: 0;">Location / Evento principale. Breve descrizione dell'intervento sulla Computational Social Science o sul digital journalism.</p>
-        </div>
-    </div>
+    <title>Events & Speaking - Alessandro Zonin</title>
+
+    <meta name="description" content="Speaking engagements, conferences, and university lectures by Alessandro Zonin.">
+    <meta name="keywords" content="Alessandro Zonin, TEDx speaker, adjunct professor, social network analysis, marketing events, conferences">
+    <meta name="author" content="Alessandro Zonin">
+
+    <meta property="og:title" content="Events & Speaking - Alessandro Zonin">
+    <meta property="og:description" content="Explore keynotes, panel discussions, and academic presentations.">
+    <meta property="og:image" content="static/az.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght=300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/landing.css">
+</head>
     
-    <!-- Ripeti per le docenze UNIVR o altri panel -->
-</div>
+<body>
+    
+    <!-- SEZIONE INTRODUTTIVA / PROFILO (IDENTICA ALLA HOME) -->
+    <section class="unlock-section">
+        <div class="container">
+            <div class="unlock-content" style="text-align: center;">
+                <!-- Foto profilo tonda -->
+                <img src="static/az.jpg" alt="Alessandro Zonin" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1.5rem auto; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                
+                <h2>Alessandro Zonin</h2>
+                <p style="font-weight: 500; color: #71717a; margin-bottom: 1.5rem;">Senior Marketing Leader | CMO & Cofounder | Adjunct Professor | TEDx speaker</p>
+                
+                <p>Trained as a sociologist, I have a decade of experience in various roles in marketing and communications. University adjunct professor, speaker, and presenter at various events and courses in Italy and abroad, with several publications in manuals, volumes, and conference proceedings.</p>
+                <p>I actively collaborate with universities, associations, and research institutions on topics such as Social Network Analysis, content marketing, and digital journalism.</p>
+                
+                <!-- Bottoni Navigazione (Rotte corrette verso index.html e publications.html) -->
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 2.5rem;">
+                    <a href="index.html#nodiux" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Nodiux</a>
+                    
+                    <a href="index.html#threadminer" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Threadminer</a>
+                    
+                    <a href="index.html#academy" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Academy</a>
+                    
+                    <a href="publications.html" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Publications ↗</a>
+                    
+                    <!-- Bottone attivo evidenziato in scuro -->
+                    <a href="events.html" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #18181b; color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; border: 1px solid #18181b;">Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE CENTRALE: TIMELINE DEGLI EVENTI -->
+    <main style="padding: 5rem 0; background-color: #fafafa; min-height: 40vh;">
+        <div class="container" style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem;">
+            
+            <h3 style="text-align: center; margin-bottom: 3.5rem; color: #27272a; font-size: 1.75rem;">Selected Events & Speaking</h3>
+            
+            <!-- TIMELINE STRUTTURATA -->
+            <div style="display: flex; flex-direction: column; gap: 3rem;">
+
+                <!-- Esempio Evento 1 -->
+                <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                    <div style="font-weight: 600; color: #a1a1aa; font-size: 1.1rem; min-width: 70px; padding-top: 0.2rem;">
+                        2025
+                    </div>
+                    <div style="border-left: 2px solid #e4e4e7; padding-left: 1.5rem; flex-grow: 1;">
+                        <h4 style="font-size: 1.15rem; font-weight: 600; color: #18181b; margin: 0 0 0.4rem 0;">
+                            TEDx Talk: Mapping Hidden Digital Networks
+                        </h4>
+                        <p style="font-size: 0.95rem; color: #52525b; margin: 0; line-height: 1.5;">
+                            Intervento incentrato sull'evoluzione delle relazioni sociali sul web decentralizzato e sui nuovi approcci metodologici per la Computational Social Science.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Esempio Evento 2 -->
+                <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                    <div style="font-weight: 600; color: #a1a1aa; font-size: 1.1rem; min-width: 70px; padding-top: 0.2rem;">
+                        2025
+                    </div>
+                    <div style="border-left: 2px solid #e4e4e7; padding-left: 1.5rem; flex-grow: 1;">
+                        <h4 style="font-size: 1.15rem; font-weight: 600; color: #18181b; margin: 0 0 0.4rem 0;">
+                            University of Verona — Data Analytics Seminar
+                        </h4>
+                        <p style="font-size: 0.95rem; color: #52525b; margin: 0; line-height: 1.5;">
+                            Lezione magistrale focalizzata sulle metriche di centralità e sul mapping delle community applicato a piattaforme emergenti e canali digitali frammentati.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- IN FUTURO POTRAI AGGIUNGERE NUOVI BLOCCHI COPIANDO QUESTO MODELLO -->
+                <!-- 
+                <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                    <div style="font-weight: 600; color: #a1a1aa; font-size: 1.1rem; min-width: 70px; padding-top: 0.2rem;">
+                        ANNO
+                    </div>
+                    <div style="border-left: 2px solid #e4e4e7; padding-left: 1.5rem; flex-grow: 1;">
+                        <h4 style="font-size: 1.15rem; font-weight: 600; color: #18181b; margin: 0 0 0.4rem 0;">
+                            Titolo dell'evento o intervento
+                        </h4>
+                        <p style="font-size: 0.95rem; color: #52525b; margin: 0; line-height: 1.5;">
+                            Descrizione o dettagli della conferenza/corso.
+                        </p>
+                    </div>
+                </div> 
+                -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER CON LINK SOCIAL (IDENTICO ALLA HOME) -->
+    <footer class="site-footer">
+        <div class="container" style="text-align: center; padding: 3rem 0;">
+            <div class="social-icons" style="margin-bottom: 1.5rem; display: flex; justify-content: center; align-items: center; gap: 1.5rem;">
+                <!-- Digital Data Stories -->
+                <a href="https://digitaldatastories.it/" target="_blank" rel="noopener noreferrer" aria-label="Digital Data Stories" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#globe"></use></svg>
+                </a>
+                <!-- Email -->
+                <a href="mailto:alezonin70@gmail.com" aria-label="Email" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#email"></use></svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/zonin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#linkedin"></use></svg>
+                </a>
+                <!-- Bluesky -->
+                <a href="https://bsky.app/profile/alezonin.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#bluesky"></use></svg>
+                </a>
+            </div>            
+            <p class="copyright" style="margin: 0; color: #8a8a8a; font-size: 0.9rem;">Alessandro Zonin. Making sense of the social web.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
