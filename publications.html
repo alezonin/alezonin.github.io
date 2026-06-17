@@ -1,12 +1,135 @@
-<div class="container" style="max-width: 800px; margin: 4rem auto; padding: 0 1rem;">
-    <a href="index.html" style="text-decoration: none; color: #71717a; font-size: 0.9rem;">← Back to Home</a>
-    <h1 style="margin-top: 1.5rem; margin-bottom: 2.5rem;">Publications</h1>
+<!-- ALESSANDRO nuova pagina landing - PUBLICATIONS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="static/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="publication-item" style="margin-bottom: 2rem; border-left: 3px solid #e4e4e7; padding-left: 1rem;">
-        <p style="font-size: 1.05rem; margin-bottom: 0.3rem;"><strong>Nodiux: A web-based tool for network analysis and visualization of decentralized social media</strong></p>
-        <p style="font-size: 0.9rem; color: #666; margin: 0;">Zonin, A. (2025). <em>Zenodo.</em> DOI: 10.5281/zenodo.17913975</p>
-        <a href="https://doi.org/10.5281/zenodo.17913975" target="_blank" style="font-size: 0.85rem; color: #0285ff;">View Paper</a>
-    </div>
+    <title>Publications - Alessandro Zonin</title>
+
+    <meta name="description" content="Academic and professional publications by Alessandro Zonin on Social Network Analysis and Computational Social Science.">
+    <meta name="keywords" content="Socioviz, social network analysis, SNA, research, publications, Gephi, Bluesky analytics, Reddit analytics">
+    <meta name="author" content="Alessandro Zonin">
+
+    <meta property="og:title" content="Publications - Alessandro Zonin">
+    <meta property="og:description" content="Explore research papers, tool documentations, and publications.">
+    <meta property="og:image" content="static/az.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght=300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/landing.css">
+</head>
     
-    <!-- Ripeti il blocco per gli altri paper e manuali -->
-</div>
+<body>
+    
+    <!-- SEZIONE INTRODUTTIVA / PROFILO (IDENTICA ALLA HOME) -->
+    <section class="unlock-section">
+        <div class="container">
+            <div class="unlock-content" style="text-align: center;">
+                <!-- Foto profilo tonda -->
+                <img src="static/az.jpg" alt="Alessandro Zonin" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1.5rem auto; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                
+                <h2>Alessandro Zonin</h2>
+                <p style="font-weight: 500; color: #71717a; margin-bottom: 1.5rem;">Senior Marketing Leader | CMO & Cofounder | Adjunct Professor | TEDx speaker</p>
+                
+                <p>Trained as a sociologist, I have a decade of experience in various roles in marketing and communications. University adjunct professor, speaker, and presenter at various events and courses in Italy and abroad, with several publications in manuals, volumes, and conference proceedings.</p>
+                <p>I actively collaborate with universities, associations, and research institutions on topics such as Social Network Analysis, content marketing, and digital journalism.</p>
+                
+                <!-- Bottoni Navigazione (Rotte corrette verso index.html) -->
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 2.5rem;">
+                    <a href="index.html#nodiux" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Nodiux</a>
+                    
+                    <a href="index.html#threadminer" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Threadminer</a>
+                    
+                    <a href="index.html#academy" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Academy</a>
+                    
+                    <!-- Bottone attivo evidenziato in scuro -->
+                    <a href="publications.html" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #18181b; color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; border: 1px solid #18181b;">Publications</a>
+                    
+                    <a href="events.html" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Events ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE CENTRALE: LISTA PUBBLICAZIONI -->
+    <main style="padding: 5rem 0; background-color: #fafafa; min-height: 40vh;">
+        <div class="container" style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem;">
+            
+            <h3 style="text-align: center; margin-bottom: 3.5rem; color: #27272a; font-size: 1.75rem;">Selected Publications</h3>
+            
+            <!-- LISTA DELLE PUBBLICAZIONI -->
+            <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+
+                <!-- Pubblicazione 1 -->
+                <div style="border-left: 3px solid #e4e4e7; padding-left: 1.5rem; padding-top: 0.2rem; padding-bottom: 0.2rem;">
+                    <p style="font-size: 1.1rem; font-weight: 600; color: #18181b; margin: 0 0 0.5rem 0; line-height: 1.4;">
+                        Nodiux: A web-based tool for network analysis and visualization of decentralized social media
+                    </p>
+                    <p style="font-size: 0.95rem; color: #52525b; margin: 0 0 0.8rem 0; line-height: 1.5;">
+                        Zonin, A. (2025). <em>Zenodo.</em> DOI: 10.5281/zenodo.17913975
+                    </p>
+                    <a href="https://doi.org/10.5281/zenodo.17913975" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #0285ff; text-decoration: none; font-weight: 500;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">View Paper / Dataset ↗</a>
+                </div>
+
+                <!-- Pubblicazione 2 -->
+                <div style="border-left: 3px solid #e4e4e7; padding-left: 1.5rem; padding-top: 0.2rem; padding-bottom: 0.2rem;">
+                    <p style="font-size: 1.1rem; font-weight: 600; color: #18181b; margin: 0 0 0.5rem 0; line-height: 1.4;">
+                        Threadminer: A web-based tool for mixed-method analysis and AI-assisted qualitative coding of Reddit communities
+                    </p>
+                    <p style="font-size: 0.95rem; color: #52525b; margin: 0 0 0.8rem 0; line-height: 1.5;">
+                        Zonin, A. (2025). <em>Zenodo.</em> DOI: 10.5281/zenodo.17913326
+                    </p>
+                    <a href="https://doi.org/10.5281/zenodo.17913326" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #0285ff; text-decoration: none; font-weight: 500;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">View Paper / Dataset ↗</a>
+                </div>
+
+                <!-- POI POTRAI AGGIUNGERE LE ALTRE PUBBLICAZIONI COPIANDO IL BLOCCO QUI SOTTO -->
+                <!-- 
+                <div style="border-left: 3px solid #e4e4e7; padding-left: 1.5rem; padding-top: 0.2rem; padding-bottom: 0.2rem;">
+                    <p style="font-size: 1.1rem; font-weight: 600; color: #18181b; margin: 0 0 0.5rem 0; line-height: 1.4;">
+                        Titolo della tua nuova pubblicazione o capitolo di manuale
+                    </p>
+                    <p style="font-size: 0.95rem; color: #52525b; margin: 0 0 0.8rem 0; line-height: 1.5;">
+                        Autori (Anno). <em>Nome Rivista / Editore.</em> Dettagli aggiuntivi
+                    </p>
+                    <a href="#" target="_blank" style="font-size: 0.85rem; color: #0285ff; text-decoration: none; font-weight: 500;">Link ↗</a>
+                </div> 
+                -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER CON LINK SOCIAL (IDENTICO ALLA HOME) -->
+    <footer class="site-footer">
+        <div class="container" style="text-align: center; padding: 3rem 0;">
+            <div class="social-icons" style="margin-bottom: 1.5rem; display: flex; justify-content: center; align-items: center; gap: 1.5rem;">
+                <!-- Digital Data Stories -->
+                <a href="https://digitaldatastories.it/" target="_blank" rel="noopener noreferrer" aria-label="Digital Data Stories" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#globe"></use></svg>
+                </a>
+                <!-- Email -->
+                <a href="mailto:alezonin70@gmail.com" aria-label="Email" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#email"></use></svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/zonin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#linkedin"></use></svg>
+                </a>
+                <!-- Bluesky -->
+                <a href="https://bsky.app/profile/alezonin.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#bluesky"></use></svg>
+                </a>
+            </div>            
+            <p class="copyright" style="margin: 0; color: #8a8a8a; font-size: 0.9rem;">Alessandro Zonin. Making sense of the social web.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
