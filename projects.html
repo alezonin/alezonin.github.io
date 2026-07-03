@@ -1,0 +1,196 @@
+<!-- ALESSANDRO nuova pagina landing - PROJECTS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="static/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects & Portfolio - Alessandro Zonin</title>
+
+    <meta name="description" content="Portfolio and projects by Alessandro Zonin.">
+    <meta name="keywords" content="Alessandro Zonin, portfolio, projects, social network analysis, marketing">
+    <meta name="author" content="Alessandro Zonin">
+
+    <meta property="og:title" content="Projects & Portfolio - Alessandro Zonin">
+    <meta property="og:description" content="Explore my latest projects and portfolio.">
+    <meta property="og:image" content="static/az.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght=300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/landing.css">
+
+    <!-- Aggiungo un po' di stile per il mosaico delle immagini -->
+    <style>
+        .project-card {
+            background-color: #ffffff;
+            border: 1px solid #e4e4e7;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .image-mosaic {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .image-mosaic img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .image-mosaic img:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 768px) {
+            .image-mosaic {
+                grid-template-columns: 1fr;
+            }
+            .image-mosaic img {
+                height: auto;
+                aspect-ratio: 16/9;
+            }
+            .project-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+    
+<body>
+    
+    <!-- SEZIONE INTRODUTTIVA / PROFILO -->
+    <section class="unlock-section">
+        <div class="container">
+            <div class="unlock-content" style="text-align: center;">
+                <!-- Foto profilo tonda -->
+                <img src="static/az.jpg" alt="Alessandro Zonin" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1.5rem auto; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                
+                <h2>Alessandro Zonin</h2>
+                <p style="font-weight: 500; color: #71717a; margin-bottom: 1.5rem;">Senior Marketing Leader | CMO & Cofounder | Adjunct Professor | TEDx speaker</p>
+                
+                <p>Trained as a sociologist, I have a decade of experience in various roles in marketing and communications. University adjunct professor, speaker, and presenter at various events and courses in Italy and abroad, with several publications in manuals, volumes, and conference proceedings.</p>
+                <p>I actively collaborate with universities, associations, and research institutions on topics such as Social Network Analysis, content marketing, and digital journalism.</p>
+                
+                <!-- Bottoni Navigazione (Projects Attiva) -->
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 2.5rem;">
+                    <a href="index.html" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Alessandro Zonin</a>
+                    
+                    <a href="index.html#nodiux" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Nodiux</a>
+                    
+                    <a href="index.html#threadminer" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Threadminer</a>
+                    
+                    <a href="index.html#academy" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Academy</a>
+                    
+                    <a href="publications.html" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Publications</a>
+                    
+                    <a href="events.html" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #f4f4f5; color: #52525b; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; transition: all 0.2s ease; border: 1px solid #e4e4e7;" onmouseover="this.style.backgroundColor='#e4e4e7'; this.style.color='#18181b';" onmouseout="this.style.backgroundColor='#f4f4f5'; this.style.color='#52525b';">Events</a>
+
+                    <!-- Projects Attiva -->
+                    <a href="projects.html" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #18181b; color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: 500; border-radius: 50px; border: 1px solid #18181b;">Projects</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE CENTRALE: PORTFOLIO PROGETTI -->
+    <main style="padding: 4rem 0; background-color: #fafafa; min-height: 50vh;">
+        <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 1.5rem;">
+            
+            <h3 style="text-align: center; margin-bottom: 4rem; color: #27272a; font-size: 1.75rem;">Projects & Portfolio</h3>
+            
+            <!-- CONTENITORE PROGETTI -->
+            <div style="display: flex; flex-direction: column; gap: 4rem;">
+
+                <!-- PROGETTO 1 -->
+                <article class="project-card">
+                    <!-- Intestazione: Titolo, Affiliazione e Data -->
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid #f4f4f5; padding-bottom: 1rem; margin-bottom: 1.5rem;">
+                        <div>
+                            <h2 style="font-size: 1.5rem; font-weight: 600; color: #18181b; margin: 0 0 0.5rem 0;">Social Network Analysis per il Settore Editoriale</h2>
+                            <span style="display: inline-block; font-size: 0.9rem; font-weight: 500; color: #09090b; background-color: #f4f4f5; padding: 0.2rem 0.8rem; border-radius: 20px;">Affiliation: Università di Verona</span>
+                        </div>
+                        <div style="font-weight: 600; color: #a1a1aa; font-size: 1.1rem;">Novembre 2025</div>
+                    </div>
+
+                    <!-- Descrizione Testuale -->
+                    <div style="color: #52525b; line-height: 1.6; font-size: 1rem;">
+                        <p style="margin-top: 0;">Un'analisi approfondita sulle dinamiche di condivisione e diffusione delle notizie sulle piattaforme social. Il progetto ha mappato le relazioni tra i principali influencer del settore editoriale, identificando i nodi centrali della rete e i cluster di discussione attorno a temi chiave.</p>
+                        <p>Le metodologie utilizzate includono l'estrazione di dati via API, la pulizia del dataset con script Python personalizzati e la visualizzazione finale tramite Gephi, che ha permesso di evidenziare le echo chambers e le polarizzazioni dell'audience.</p>
+                    </div>
+
+                    <!-- Mosaico Immagini (4 Immagini) -->
+                    <div class="image-mosaic">
+                        <img src="static/placeholder-proj1-a.jpg" alt="Analisi dei dati in Python">
+                        <img src="static/placeholder-proj1-b.jpg" alt="Mappa concettuale dei nodi">
+                        <img src="static/placeholder-proj1-c.jpg" alt="Visualizzazione in Gephi">
+                        <img src="static/placeholder-proj1-d.jpg" alt="Presentazione dei risultati">
+                    </div>
+                </article>
+
+                <!-- PROGETTO 2 -->
+                <article class="project-card">
+                    <!-- Intestazione: Titolo, Affiliazione e Data -->
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid #f4f4f5; padding-bottom: 1rem; margin-bottom: 1.5rem;">
+                        <div>
+                            <h2 style="font-size: 1.5rem; font-weight: 600; color: #18181b; margin: 0 0 0.5rem 0;">Sviluppo di Threadminer: Social Scraping Automation</h2>
+                            <span style="display: inline-block; font-size: 0.9rem; font-weight: 500; color: #09090b; background-color: #f4f4f5; padding: 0.2rem 0.8rem; border-radius: 20px;">Affiliation: Independent Project / Startup</span>
+                        </div>
+                        <div style="font-weight: 600; color: #a1a1aa; font-size: 1.1rem;">Gennaio 2024</div>
+                    </div>
+
+                    <!-- Descrizione Testuale -->
+                    <div style="color: #52525b; line-height: 1.6; font-size: 1rem;">
+                        <p style="margin-top: 0;">Ideazione e sviluppo di uno strumento dedicato al data mining su forum e piattaforme di micro-blogging. Il progetto nasce dall'esigenza di automatizzare la raccolta di thread complessi, preservando la struttura gerarchica delle conversazioni per successive analisi semantiche.</p>
+                        <p>Abbiamo creato una dashboard intuitiva che permette a ricercatori e marketer di esportare i dati in formati standard (CSV, JSON) pronti per essere importati in software di sentiment analysis e social network analysis.</p>
+                    </div>
+
+                    <!-- Mosaico Immagini (4 Immagini) -->
+                    <div class="image-mosaic">
+                        <img src="static/placeholder-proj2-a.jpg" alt="Dashboard di Threadminer">
+                        <img src="static/placeholder-proj2-b.jpg" alt="Estrazione dati strutturata">
+                        <img src="static/placeholder-proj2-c.jpg" alt="Architettura del database">
+                        <img src="static/placeholder-proj2-d.jpg" alt="Esportazione risultati">
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER CON LINK SOCIAL -->
+    <footer class="site-footer">
+        <div class="container" style="text-align: center; padding: 3rem 0;">
+            <div class="social-icons" style="margin-bottom: 1.5rem; display: flex; justify-content: center; align-items: center; gap: 1.5rem;">
+                <!-- Email -->
+                <a href="mailto:alezonin70@gmail.com" aria-label="Email" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#email"></use></svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/zonin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#linkedin"></use></svg>
+                </a>
+                <!-- Bluesky -->
+                <a href="https://bsky.app/profile/alezonin.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#bluesky"></use></svg>
+                </a>
+                <!-- Substack -->
+                <a href="https://alessandrozonin.substack.com" target="_blank" rel="noopener noreferrer" aria-label="Substack" style="display: flex;">
+                    <svg class="icon" width="22" height="22" style="fill: #71717a;"><use xlink:href="static/icons.svg#substack"></use></svg>
+                </a>
+            </div>            
+            <p class="copyright" style="margin: 0; color: #8a8a8a; font-size: 0.9rem;">Alessandro Zonin. Making sense of the social web.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
