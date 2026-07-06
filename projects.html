@@ -61,7 +61,40 @@
                 padding: 1.5rem;
             }
         }
+
+        /* Stile per blocco a 2 elementi (Immagine + Video) */
+        .image-video-mosaic {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .image-video-mosaic img, .image-video-mosaic .video-wrapper {
+            width: 100%;
+            height: 280px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .image-video-mosaic iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Gestione Mobile */
+        @media (max-width: 768px) {
+            .image-video-mosaic {
+                grid-template-columns: 1fr;
+            }
+            .image-video-mosaic img, .image-video-mosaic .video-wrapper {
+                height: auto;
+                aspect-ratio: 16/9;
+            }
+        }
+        
     </style>
+    
 </head>
     
 <body>
@@ -108,26 +141,32 @@
             
             <div style="display: flex; flex-direction: column; gap: 4rem;">
                 
-                
-              <article class="project-card">
+                 <!-- 2014 TEDx -->
+                <article class="project-card">
                     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid #f4f4f5; padding-bottom: 1rem; margin-bottom: 1.5rem;">
                         <div>
-                            <h2 style="font-size: 1.5rem; font-weight: 600; color: #18181b; margin: 0 0 0.5rem 0;">Vinitaly 2013 on Twitter: Social Network Analysis & Data Journalism</h2>
-                            <span style="display: inline-block; font-size: 0.9rem; font-weight: 500; color: #09090b; background-color: #f4f4f5; padding: 0.2rem 0.8rem; border-radius: 20px;">Affiliation: L'Arena di Verona & Dataninja.it</span>
+                            <h2 style="font-size: 1.5rem; font-weight: 600; color: #18181b; margin: 0 0 0.5rem 0;">We Are All Nodes, Living in the Network</h2>
+                            <span style="display: inline-block; font-size: 0.9rem; font-weight: 500; color: #09090b; background-color: #f4f4f5; padding: 0.2rem 0.8rem; border-radius: 20px;">Affiliation: TEDxVerona</span>
                         </div>
-                        <div style="font-weight: 600; color: #a1a1aa; font-size: 1.1rem;">June 2013</div>
+                        <div style="font-weight: 600; color: #a1a1aa; font-size: 1.1rem;">February 2014</div>
                     </div>
                 
                     <div style="color: #52525b; line-height: 1.6; font-size: 1rem;">
-                        <p style="margin-top: 0;">A data journalism and research project conducted in collaboration with Irene Pasquetto, analyzing the digital footprint and social media chatter during the Vinitaly 2013 international wine exhibition. The study was published as a dedicated feature in the newspaper <i>L'Arena di Verona</i> and showcased within Dataninja.it's research lab.</p>
-                        <p>By applying Social Network Analysis (SNA) methodologies to thousands of tweets containing the organic hashtags #vinitaly and #vinitaly2013, the project mapped the interaction patterns, temporal spikes, and network structures of over 2,600 unique users. The findings tracked the engagement ratios of top active wine bloggers, official institutional accounts (@vinitalytasting), and high-profile industry influencers who drove the global digital conversation.</p>
+                        <p style="margin-top: 0;">A TEDx talk introducing the history, methodology, and modern applications of Social Network Analysis (SNA). The presentation traces the mathematical roots of network theory from Leonhard Euler's graph theory to Jacob Levi Moreno's sociogram, demonstrating how digital traces spontaneously map our contemporary social interactions.</p>
+                        <p>The talk features a unique case study in educational sciences, demonstrating how kindergarten children intuitively mapped their own relational structures using a ball of yarn passed from hand to hand—creating a literal, physical "web of friendship" that beautifully visualizes the core principles of network theory.</p>
                     </div>
                 
-                    <div class="image-mosaic">
-                        <img src="static/vinitaly-network.jpg" alt="Twitter interaction network graph">
-                        <img src="static/vinitaly-timeline.jpg" alt="Temporal analysis of tweets and spikes">
-                        <img src="static/vinitaly-influencers.jpg" alt="Key influencers and engagement metrics">
-                        <img src="static/vinitaly-newspaper.jpg" alt="Published article on L'Arena newspaper">
+                    <div class="image-video-mosaic">
+                        <img src="static/ragnatela-amicizia.jpg" alt="The Web of Friendship - Kindergarten Sociogram Experiment">
+                        
+                        <div class="video-wrapper">
+                            <iframe 
+                                src="https://www.youtube.com/embed/VIDEO_ID" 
+                                title="We are all nodes, living in the network - Alessandro Zonin - TEDxVerona" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
                 </article>
 
