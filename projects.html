@@ -241,7 +241,7 @@
                     </div>
                 
                     <div class="image-video-mosaic">
-                        <img src="static/iotedx01.png" alt="Alessandro Zonin TEDx Verona">
+                        <img src="static/iotedx01.png" alt="Alessandro Zonin TEDx Verona" class="zoomable">
                         
                         <!-- 2. Link YouTube corretto con /embed/ -->
                         <div class="video-wrapper">
@@ -336,6 +336,34 @@
         <span class="lightbox-close">&times;</span>
         <img class="lightbox-content" id="lightbox-img">
     </div>
+
+    <!-- Script per far funzionare il Lightbox -->
+    <script>
+    const modal = document.getElementById("lightbox");
+    const modalImg = document.getElementById("lightbox-img");
+    const chiudi = document.querySelector(".lightbox-close");
+    
+    // Seleziona tutte le immagini cliccabili della pagina
+    const immagini = document.querySelectorAll(".image-mosaic img, .image-video-mosaic img, .zoomable");
+
+    immagini.forEach(img => {
+        img.style.cursor = "pointer"; // Forza la manina
+        img.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        });
+    });
+
+    chiudi.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function(e) {
+        if (e.target !== modalImg) {
+            modal.style.display = "none";
+        }
+    });
+    </script>
 
 </body>
 </html>
