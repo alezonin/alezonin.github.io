@@ -163,15 +163,27 @@
         </div>
     </footer>
 
+    <!-- 1. IL CONTENITORE DEL LIGHTBOX (Che prima mancava) -->
+    <div id="lightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- 2. LO SCRIPT AGGIORNATO (Con le classi corrette per la landing di Nodiux) -->
     <script>
-    // Seleziona gli elementi
+    // Seleziona gli elementi del lightbox
     const modal = document.getElementById("lightbox");
     const modalImg = document.getElementById("lightbox-img");
     const chiudi = document.querySelector(".lightbox-close");
-    const immaginiMosaico = document.querySelectorAll(".image-mosaic img");
+    
+    // Seleziona le immagini corrette di questa pagina (hero e features)
+    const immagini = document.querySelectorAll(".feature-image img, .hero-image-container img");
 
-    // Assegna il click a tutte le immagini del mosaico
-    immaginiMosaico.forEach(img => {
+    // Assegna il click a tutte le immagini trovate
+    immagini.forEach(img => {
+        // Forza l'apparizione della manina via JavaScript per sicurezza
+        img.style.cursor = "pointer"; 
+        
         img.addEventListener("click", function() {
             modal.style.display = "flex"; // Mostra il lightbox
             modalImg.src = this.src;      // Copia la sorgente dell'immagine cliccata
@@ -190,6 +202,7 @@
         }
     });
     </script>
+    
 
 </body>
 </html>
