@@ -163,6 +163,34 @@
         </div>
     </footer>
 
+    <script>
+    // Seleziona gli elementi
+    const modal = document.getElementById("lightbox");
+    const modalImg = document.getElementById("lightbox-img");
+    const chiudi = document.querySelector(".lightbox-close");
+    const immaginiMosaico = document.querySelectorAll(".image-mosaic img");
+
+    // Assegna il click a tutte le immagini del mosaico
+    immaginiMosaico.forEach(img => {
+        img.addEventListener("click", function() {
+            modal.style.display = "flex"; // Mostra il lightbox
+            modalImg.src = this.src;      // Copia la sorgente dell'immagine cliccata
+        });
+    });
+
+    // Chiudi cliccando sulla "X"
+    chiudi.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    // Chiudi cliccando ovunque sullo sfondo scuro
+    modal.addEventListener("click", function(e) {
+        if (e.target !== modalImg) {
+            modal.style.display = "none";
+        }
+    });
+    </script>
+
 </body>
 </html>
 <!-- ALESSANDRO 28/12/2025 nuova pagina landing END -->
