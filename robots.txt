@@ -1,0 +1,22 @@
+# Permetti a TUTTI i motori di ricerca standard (Google, Bing, ecc.)
+User-agent: *
+Allow: /
+
+# Permetti esplicitamente ai crawler AI
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Dichiara la mappa del sito
+Sitemap: https://alezonin.github.io/sitemap.xml
